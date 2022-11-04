@@ -6,8 +6,15 @@ repositories {
     mavenCentral()
 }
 
+compileJava {
+    options.encoding = 'UTF-8'
+}
+compileTestJava {
+    options.encoding = 'UTF-8'
+}
+
 dependencies {
-    testImplementation (
+    testImplementation(
             "com.codeborne:selenide:6.7.4",
             'org.junit.jupiter:junit-jupiter:5.9.0'
     )
