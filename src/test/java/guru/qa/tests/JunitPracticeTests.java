@@ -55,7 +55,7 @@ public class JunitPracticeTests {
     }
 
     @MethodSource("chessButtonTest")
-    @ParameterizedTest(name = "Проверка отображения названия кнопок при смене языка: {1}")
+    @ParameterizedTest(name = "Проверка отображения текста при смене языка: {1}")
     void chessButtonTest(List<String> titleText, Locale locale) {
         open("https://www.chess.com/");
         $(".nav-menu-area button[type = 'button']").click();
